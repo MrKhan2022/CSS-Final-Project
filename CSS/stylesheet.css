@@ -1,0 +1,160 @@
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: url("../Images/adamlapunik-pakistan-6837594.jpg");
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0.2;
+    pointer-events: none;
+    z-index: -1;
+}
+a.skip-link
+{
+    position: absolute;
+    transform:translateY(-1000px);
+}
+a.skip-link:focus
+{
+    transform: translateY(0);
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    z-index: 1000;
+}
+header {
+    background-color: #d7d5d5;
+    border: black solid 2px;
+    text-align: center;
+    font-family: "arial", sans-serif;
+    font-size: 25px;
+}
+header h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+header nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    background-color: #ffffff;
+    border: black solid 2px;
+    padding: 5px;
+}
+header nav a.active {
+    background-color: #555555;
+    color: white;
+}
+header nav a:hover {
+    background-color: #000000;
+    color: white;
+}
+main div.about
+{
+    text-align: center;
+}
+
+main div.about h2
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+main div.about p
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+main div.galleryGrid
+{
+    text-align: center;
+}
+main div.galleryGrid div
+{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    justify-items: center;
+}
+main div.galleryGrid h2
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+main div.galleryGrid div img
+{
+    width: 80%;
+    height: 80%;
+    margin: 10px;
+    padding: 10px;
+    border: black solid 5px;
+    background-color: #afafaf;
+    transition: transform 0.3s ease;
+}
+
+main div.galleryGrid div img:hover
+{
+    transform: scale(1.05);
+}
+
+main div.galleryFlex
+{
+    text-align: center;
+}
+main div.galleryFlex div
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+main div.galleryFlex h2
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+main div.galleryFlex div img
+{
+    width: 20%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    border: black solid 5px;
+    background-color: #afafaf;
+    transition: transform 0.3s ease, border-radius 0.3s ease;
+}
+
+main div.galleryFlex div img:nth-child(even):hover
+{
+    border-radius: 50px;
+}
+
+main div.galleryFlex div img:nth-child(odd):hover
+{
+    transform: scale(1.05);
+}
+
+footer
+{
+    background-color: #d7d5d5;
+    border: black solid 2px;
+    text-align: center;
+    font-family: "arial", sans-serif;
+    font-size: 20px;
+    margin: 50px auto;
+}
